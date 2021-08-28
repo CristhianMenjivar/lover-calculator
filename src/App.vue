@@ -147,6 +147,40 @@ button {
   -moz-box-shadow: 3px 10px 14px -3px rgba(0, 0, 0, 0.64);
 }
 
+@media only screen and (max-width: 900px) {
+  #app {
+    background-image: url("assets/love-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .app-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    background: rgba(7, 7, 7, 0.584);
+  }
+
+  .title {
+    font-size: 40px;
+    color: rgb(250, 161, 176);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 100%;
+  }
+
+  input {
+    width: 85%;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
